@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 
+/*
+# Este ejemplo esta sacado de:
+https://www.youtube.com/watch?v=dYs1iz1RCLA
+*/
+
+
 export const HookUseStart = () => {
 
     const [state, setState] = useState(false);
