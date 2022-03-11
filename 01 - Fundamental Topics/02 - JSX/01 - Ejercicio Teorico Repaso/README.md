@@ -138,7 +138,7 @@ Te devuelve un error 404.
 </p>
 </details>
 
-<details><summary>16.- ¿React es un framework o una libreria?</summary>
+<details><summary>16.- ¿React es un framework o una librería?</summary>
 <p>
 
 React es una libreria.
