@@ -44,7 +44,48 @@ Artículo explicativo: Video explicativo: [https://www.youtube.com/watch?v=3BHXu
 
 Son un formateador de código, para proyectos compartidos que todo el mundo tenga el mismo formato.  
 
-**[ESLint**](https://platzi.com/contributions/como-usar-eslint-y-prettier-para-mejorar-tu-codigo-javascript/#:~:text=ESLint%20es%20un%20linter%20de,Tambien%20analiza%20nuestro%20c%C3%B3digo%20JavaScript.) es un *linter de código JavaScript*. Su función es analizar el código de nuestra aplicación, **detectar problemas en por medio de patrones** y si esta a su alcance resolverlos él mismo. Por otro lado, **[Prettier](https://platzi.com/contributions/como-usar-eslint-y-prettier-para-mejorar-tu-codigo-javascript/#:~:text=ESLint%20es%20un%20linter%20de,Tambien%20analiza%20nuestro%20c%C3%B3digo%20JavaScript.)** es un *formateador* de código. Tambien analiza nuestro código JavaScript.
+**ESLint** es un *linter de código JavaScript*. Su función es analizar el código de nuestra aplicación, **detectar problemas en por medio de patrones** y si esta a su alcance resolverlos él mismo. Por otro lado, **Prettier** es un *formateador* de código. Tambien analiza nuestro código JavaScript.
+
+# Introducción a React
+
+### ¿Cómo es un código de react?
+
+```jsx
+const divRoot = document.querySelector('#root');
+ReactDOM.render(<h1>Hola Mundo</h1>,divRoot);
+```
+
+### Librerías de react y babel (CDN)
+
+```jsx
+<!-- Cargat React -->
+<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+```
+
+### Primer código React
+
+```jsx
+// # Código de prueba, sin hacer la instalación
+// # Solo importar los script de Cargat React
+<body>
+<div id="root"></div>
+
+<script type="text/babel"> // Para que sea procesado por babel
+   const divRoot = document.querySelector('#root');
+        
+    const nombre = 'Alvaro';
+    // React lee los {} como codigo js y por eso muestra 
+    // la variable
+    const h1Tag = <h1>Hola, soy { nombre }</h1>; // Elemento
+
+		// Primer parametro elementro, segundo donde se ubica.
+    ReactDOM.render(h1Tag, divRoot);
+
+</script>
+</body>
+```
 
 # 2. Cursos
 
@@ -59,3 +100,9 @@ Son un formateador de código, para proyectos compartidos que todo el mundo teng
 Desarrollo Útil: [https://www.youtube.com/watch?v=tjVKd1jL2Rc&list=PL3aEngjGbYhkg3AR-cytsvQIIGp1JgrY_](https://www.youtube.com/watch?v=tjVKd1jL2Rc&list=PL3aEngjGbYhkg3AR-cytsvQIIGp1JgrY_)
 
 Midudev: [https://www.youtube.com/watch?v=T_j60n1zgu0&list=PLV8x_i1fqBw0B008sQn79YxCjkHJU84pC](https://www.youtube.com/watch?v=T_j60n1zgu0&list=PLV8x_i1fqBw0B008sQn79YxCjkHJU84pC)
+
+# Artículos a tener en consideración:
+
+### **Pensando en React:**
+
+[Pensando en React - React](https://es.reactjs.org/docs/thinking-in-react.html)

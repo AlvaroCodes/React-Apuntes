@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- Cargat React -->
+<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<script type="text/babel"> 
+    const divRoot = document.querySelector('#root');
+         
+     const nav = 
+        <nav
+        
+        style={
+            {
+                backgroundColor: '#999',
+                width: '30%'
+            }
+        }
+        >
+            <a 
+            href="#"
+            style={
+            {
+                textDecoration: 'none',
+                color: 'red',
+                padding: '4px'
+            }
+        }
+            >Inicio</a>
+            <a 
+            
+            href="#"
+            style={
+            {
+                textDecoration: 'none',
+                color: 'green',
+                padding: '4px'
+            }
+        }
+            
+            >Tienda</a>
+            <a href="#"
+            style={
+            {
+                textDecoration: 'none',
+                color: 'purple',
+                padding: '4px'
+            }
+        }
+            
+            >Sobre nosotros</a>
+        </nav>; 
+
+     ReactDOM.render(nav, divRoot);
+ </script>
+</body>
+</html>

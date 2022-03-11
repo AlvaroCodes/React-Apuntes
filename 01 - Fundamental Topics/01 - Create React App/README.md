@@ -36,6 +36,7 @@ npm init @vitejs/app nombre-proyecto-vite --template react
 
 ![instalacionApp.png](../img/Vite2.png)
 
+
 ```bash
 Done. Now run: 
 cd nombre-proyecto-vite
@@ -95,4 +96,10 @@ Dentro de **package.json** encontramos los **scripst**, que son comandos para ar
 
 Cuando ejecutamos el **build de producción** en vite se llama dist y en CRA se llama build. Cuando se ejecuta el comando de build de producción se minifica el código, se ofusca y se optimiza. 
 
-En vite para ver el build de producción se ejecuta vite npm run preview.
+En vite para ver el build de producción se ejecuta vite npm run preview. 
+
+### Como estructurar los archivos, articulos:
+
+[Structuring projects and naming components in React | Hacker Noon](https://hackernoon.com/structuring-projects-and-naming-components-in-react-1261b6e18d76)
+
+[Estructura de archivos - React](https://es.reactjs.org/docs/faq-structure.html)
